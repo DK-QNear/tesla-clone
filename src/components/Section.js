@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Fade from 'react-reveal/Fade';
+import dw from "../images/down-arrow.svg"
 function Section(props) {
   return (
     <Wrap bgImage={props.backgroundImg}>
@@ -24,7 +25,7 @@ function Section(props) {
                 
             </ButtonGroup>
             </Fade>
-            <DownArrow src="/images/down-arrow.svg"/>
+            <DownArrow src={dw}/>
         </Buttons>
     </Wrap>
   )
@@ -42,7 +43,7 @@ const Wrap = styled.div`
      flex-direction:column;
      justify-content:space-between;//vertical spaces
      align-items:center;//horizontal spaces
-     background-image: ${props =>`url("/images/${props.bgImage}")`}
+     background-image: ${props =>`url("${props.bgImage}")`}
 `
 const ItemText=styled.div`
     padding-top:15vh;

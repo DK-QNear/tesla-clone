@@ -4,6 +4,13 @@ import './App.css';
 import Header from "./components/Header"
 import Home from "./components/Home"
 import Section from "./components/Section"
+import models from "./images/model-s.jpg"
+import modely from "./images/model-y.jpg"
+import model3 from "./images/model-3.jpg"
+import modelx from "./images/model-x.jpg"
+import panel from "./images/solar-panel.jpg"
+import roof from "./images/solar-roof.jpg"
+import acc from "./images/accessories.jpg"
 function App() {
   return (
     <div className="App">
@@ -12,49 +19,49 @@ function App() {
       <Section
         title="Model S"
         description="Order Online for Touchless Delivery"
-        backgroundImg="model-s.jpg"
+        backgroundImg={models}
         leftBtnText="Custom order"
         rightBtnText="Existing inventory"
       />
       <Section
         title="Model Y"
         description="Order Online for Touchless Delivery"
-        backgroundImg="model-y.jpg"
+        backgroundImg={modely}
         leftBtnText="Custom order"
         rightBtnText="Existing inventory"
       />
       <Section
         title="Model 3"
         description="Order Online for Touchless Delivery"
-        backgroundImg="model-3.jpg"
+        backgroundImg={model3}
         leftBtnText="Custom order"
         rightBtnText="Existing inventory"
       />
       <Section
         title="Model X"
         description="Order Online for Touchless Delivery"
-        backgroundImg="model-x.jpg"
+        backgroundImg={modelx}
         leftBtnText="Custom order"
         rightBtnText="Existing inventory"
       />
       <Section
         title="Lowest Cost Solar Panels in America"
         description="Money-back guarantee"
-        backgroundImg="solar-panel.jpg"
+        backgroundImg={panel}
         leftBtnText="Order now"
         rightBtnText="Learn More"
       />
       <Section
         title="Solar for New Roofs"
         description="Order Roof Costs Less Than a New Roof Plus Solar Panels"
-        backgroundImg="solar-roof.jpg"
+        backgroundImg={roof}
         leftBtnText="Order Now"
         rightBtnText="Learn More"
       />
          <Section
         title="Accessories"
         description=""
-        backgroundImg="accessories.jpg"
+        backgroundImg={acc}
         leftBtnText="Shop Now"
       />
     </div>
